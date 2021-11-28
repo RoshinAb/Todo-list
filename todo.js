@@ -8,8 +8,8 @@ function validate(checkSuccess){
 }
 function onSuccess(uname,pwd){
     if (uname == "admin" && pwd == "12345") {
-       // document.querySelector("form").action = "todo.html";
-       window.location = "todo.html"
+       document.querySelector("form").action = "todo.html";
+       //window.location = "todo.html";
     }
     else {
         alert("Invalid login");
