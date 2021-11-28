@@ -23,10 +23,10 @@ function Login(){
 
 function showTodo(){
     
-url = "https://jsonplaceholder.typicode.com/todos";
+    url = "https://jsonplaceholder.typicode.com/todos";
 
-var xhttp = new XMLHttpRequest();
-xhttp.onreadystatechange = function(){
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function(){
     var output="";
     if(this.readyState == 4 && this.status==200){
         var response = JSON.parse(this.responseText);
@@ -46,9 +46,10 @@ xhttp.onreadystatechange = function(){
     }     
 }; 
 
-xhttp.open("GET",url,true);
-xhttp.send();
+    xhttp.open("GET",url,true);
+    xhttp.send();
 }
+
 function countCheckBox(){
 
     let count=0;
